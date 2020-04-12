@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/upload.css" rel="stylesheet" type="text/css">
+    <script src="js/upload.js"></script>
+    <title>Upload</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="home.html" >
+            <img src="../images/logo.png" alt="logo">
+        </a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="browse_medium.html">Browse</a>
+            </li>
+            <li>
+                <a href="search.html">Search</a>
+            </li>
+        </ul>
+    </div>
+    <div class="account">
+        <ul>
+            <li>
+                <a class="my-account">My account</a>
+                <ul>
+                    <li>
+                        <a class="upload" href="upload.html"><img src="../images/upload.png" alt=" "> Upload</a>
+                    </li>
+                    <li>
+                        <a href="favour.html"><img src="../images/favour.png" alt=" "> My Favour</a>
+                    </li>
+                    <li>
+                        <a href="my_photo.html"><img src="../images/photo.png" alt=" "> My Photo</a>
+                    </li>
+                    <li>
+                        <a href="../index.html"><img src="../images/login.png" alt=" "> Login</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<form class="upload-bar" action="#" method="post">
+    <div class="upload-container">
+        <div class="upload-photo">
+            <div class="photo-container" id="preview" style="width:650px;height:350px;">
+                <div class="photo-container-instruction">
+                    No uploaded photo
+                </div>
+            </div>
+            <input class="input-photo" type="file" onchange="previewImage(this,650,350)" accept="image/*" />
+        </div>
+        <div class="upload-detail">
+            <div class="form-col">
+                <label>Title:</label><br>
+                <input type="text" name="title" class="form-control">
+            </div>
+            <div class="form-col">
+                <label>Country:</label><br>
+                <input type="text" name="country" class="form-control">
+            </div>
+            <div class="form-col">
+                <label>City:</label><br>
+                <input type="text" name="city" class="form-control">
+            </div>
+            <div class="form-col">
+                <label>Description:</label><br>
+                <textarea cols="5"></textarea>
+            </div>
+            <div class="form-button">
+                <a onclick="alert('Submit!')" href="my_photo.html">Submit</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<footer>
+    <div class="copyright">
+        Copyright © 2020 Lee.All rights reserved.ICP Record No.19302010006 Fudan
+    </div>
+</footer>
+
+</body>
+</html>
