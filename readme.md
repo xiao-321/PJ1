@@ -1,5 +1,8 @@
 姓名：李晓伟 学号：19302010006
 
+Github 仓库地址：https://github.com/xiao-321/PJ1
+Github Page地址：https://xiao-321.github.io/PJ1/
+
 PJ1的设计：
 All：
        设计和配色参考了网站stockvault（https://www.stockvault.net/）
